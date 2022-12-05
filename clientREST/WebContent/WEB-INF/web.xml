@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>clientREST</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+  	<servlet-name>ServletListe</servlet-name>
+  	<servlet-class>com.servlets.ServletListe</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    	<servlet-name>ServletListe</servlet-name>
+    	<url-pattern>/liste</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ServletPagination</servlet-name>
+  	<servlet-class>com.servlets.ServletPagination</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    	<servlet-name>ServletPagination</servlet-name>
+    	<url-pattern>/pagination</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ServletEdit</servlet-name>
+  	<servlet-class>com.servlets.ServletEdit</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    	<servlet-name>ServletEdit</servlet-name>
+    	<url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

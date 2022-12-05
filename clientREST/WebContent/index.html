@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+</head>
+<style>
+.button {
+  background-color: midnightblue;
+  border: none;
+  color: white;
+  width: 400px;
+  padding: 45px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 45px;
+  margin: 400px 100px;
+  cursor: pointer;
+}
+.container {
+	margin-left: 34%;
+}
+</style>
+<body>
+	<h1 align="center">Choisissez une option</h1>
+	<div class="container">
+		<button class="button" onclick="location.href='http://localhost:8181/clientREST/liste'">Liste</button>
+		<button class="button" onclick="location.href='http://localhost:8181/clientREST/pagination'">Pagination</button>
+	</div>
+</body>
+</html>
